@@ -1,15 +1,14 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-from distutils.core import setup
- 
+from setuptools import setup, find_packages
+
+
 setup(
     name='facebook-python-sdk',
     version='0.1',
     description='This client library is designed to support the Facebook Graph API and the official Facebook JavaScript SDK, which is the canonical way to implement Facebook authentication.',
+    long_description=open('README.md').read(),
     author='Facebook',
-    url='http://github.com/facebook/python-sdk',
+    url='https://github.com/aino/facebook-python-sdk',
     package_dir={'': 'src'},
-    py_modules=[
-        'facebook',
-    ],
+    packages=find_packages(),
+    zip_safe=False,
 )

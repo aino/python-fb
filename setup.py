@@ -8,7 +8,6 @@ setup(
     long_description=open('README.md').read(),
     author='Facebook',
     url='https://github.com/aino/facebook-python-sdk',
-    package_dir={'': 'src'},
     packages=find_packages(),
     zip_safe=False,
 )
